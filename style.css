@@ -1,0 +1,52 @@
+body{
+    background-color: burlywood;
+}
+
+.header, h1{
+    
+    background-color: bisque;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    font-size: 2em;
+    
+
+
+}.header:hover {
+    color: peru;
+}
+
+/* this source was used to make the grid. https://grid.layoutit.com/ */
+.container {
+    display: grid; 
+    
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 10px; 
+    grid-template-areas: 
+      "sebastian vetle theodor"; 
+  }
+  .sebastian { grid-area: sebastian; }
+  .vetle { grid-area: vetle; }
+  .theodor { grid-area: theodor; }
+
+
+a{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    text-decoration:none;
+    color: black;
+    border-color: black;
+    font-size: 20px;
+
+}
+
+a:hover{
+    text-decoration:underline;
+
+}
+
+.sebastian > h1, .vetle > h1, .theodor > h1{
+    border: 2px solid black;
+}
